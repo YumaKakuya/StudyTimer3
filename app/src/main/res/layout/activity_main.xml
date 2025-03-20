@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:padding="16dp">
+
+    <!-- デジタル時計表示用のコンテナ（中央揃え） -->
+    <FrameLayout
+        android:id="@+id/digitalClockContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:gravity="center"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:id="@+id/digitalClockText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textColor="#00FF00"
+            android:textSize="48sp"
+            android:typeface="monospace"
+            android:padding="16dp" />
+    </FrameLayout>
+
+    <!-- タイマー時間加算ボタン群 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnTimer1min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1分" />
+
+        <Button
+            android:id="@+id/btnTimer5min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5分"
+            android:layout_marginStart="8dp" />
+
+        <Button
+            android:id="@+id/btnTimer10min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10分"
+            android:layout_marginStart="8dp" />
+
+        <Button
+            android:id="@+id/btnTimer25min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25分"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- タイマー制御ボタン -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="スタート" />
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ストップ"
+            android:layout_marginStart="8dp" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="リセット"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- サウンドとバイブレーションの選択チェックボックス -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <CheckBox
+            android:id="@+id/chkSound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="サウンド" />
+
+        <CheckBox
+            android:id="@+id/chkVibration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="バイブレーション"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+</LinearLayout>

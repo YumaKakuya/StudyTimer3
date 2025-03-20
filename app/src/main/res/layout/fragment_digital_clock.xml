@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- デジタル時計表示 -->
+    <TextView
+        android:id="@+id/digitalClockText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Digital Clock Placeholder"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- タイマー時間選択用ボタン群 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="タイマー時間を選択"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnTimer5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5分"
+            android:layout_margin="4dp"/>
+
+        <Button
+            android:id="@+id/btnTimer10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10分"
+            android:layout_margin="4dp"/>
+
+        <Button
+            android:id="@+id/btnTimer15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15分"
+            android:layout_margin="4dp"/>
+
+        <Button
+            android:id="@+id/btnTimer25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25分"
+            android:layout_margin="4dp"/>
+
+        <Button
+            android:id="@+id/btnTimer50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50分"
+            android:layout_margin="4dp"/>
+    </LinearLayout>
+
+    <!-- スペース -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
+    <!-- タイマー制御用ボタン群 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:layout_margin="4dp"/>
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:layout_margin="4dp"/>
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:layout_margin="4dp"/>
+    </LinearLayout>
+
+</LinearLayout>
+
