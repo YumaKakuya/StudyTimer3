@@ -63,6 +63,8 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation("androidx.fragment:fragment-ktx:1.6.0")
 
+
+
     // テスト関連の依存関係
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
